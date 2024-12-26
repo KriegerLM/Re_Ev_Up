@@ -1,54 +1,82 @@
+/* CSS para la página de presentación */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #cde9fe; /* Azul cielo pastel */
-  color: #333; /* Texto oscuro */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa; /* Gris claro */
+  color: #333;
 }
-header {
-  background-color: #42a5f5; /* Azul claro brillante */
-  color: #ffffff; /* Blanco puro */
-  padding: 15px;
-  text-align: center;
-  font-size: 1.5em;
+
+nav {
+  margin-top: 10px;
 }
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+}
+
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
+  margin: 20px;
 }
-.container {
-  background-color: #ffffff; /* Blanco */
+
+section.content {
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
+  flex: 1;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 10px;
 }
-.container h1 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #128ff3; /* Azul brillante */
+
+aside.menu {
+  background-color: #e9ecef; /* Gris claro */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 0 200px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  margin: 10px;
 }
-.btn {
-  display: block;
-  width: 100%;
+
+aside.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside.menu ul li {
   margin: 10px 0;
-  padding: 10px;
-  background-color: #69bafc; /* Azul intermedio */
-  color: #ffffff; /* Blanco */
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  text-decoration: none;
 }
-button a {
-  background: none;
-  color: #ffffff;
+
+aside.menu ul li a {
   text-decoration: none;
+  color: #343a40; /* Gris oscuro */
   font-weight: bold;
 }
-.btn:hover {
-  background-color: #34a5ff; /* Azul más brillante */
+
+@media (max-width: 768px) {
+  aside.menu {
+    flex: 1;
+    order: 1;
+    margin-top: 20px;
+  }
+
+  section.content {
+    order: 2;
+  }
+
+  footer .columns {
+    flex-direction: column;
+    text-align: center;
+  }
 }

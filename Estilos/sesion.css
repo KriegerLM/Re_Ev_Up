@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: arial, sans-serif;
-  background-color: #e3f2fd;
+  background-color: #cde9fe;
   color: #333;
 }
 main {
@@ -21,24 +21,26 @@ main {
 .container h1 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #42a5f5;
+  color: #128ff3;
 }
 .inSect {
   display: block;
   width: 97%;
   margin: 10px 0;
-  padding: 5px 0 5px 5px;
+  padding: 10px 0 10px 5px;
   background-color: #ffffff;
   color: #000;
   border-radius: 1rem;
   border-color: #42a5f5;
+  font-size: medium;
+  text-align: start;
 }
 .btn {
   display: block;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
-  background-color: #90caf9;
+  background-color: #69bafc;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -46,5 +48,5 @@ main {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #42a5f5;
+  background-color: #34a5ff;
 }

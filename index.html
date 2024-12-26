@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Inicio de Sesión</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="estilos/index.css" rel="stylesheet" />
+    <title>Presentación de la Empresa</title>
+    <link rel="stylesheet" href="Estilos/index.css" />
   </head>
   <body>
-    <header>Bienvenido a Regalos y Eventos ALUMNOS UPIICSA</header>
-    <main>
-      <div class="container">
-        <h1>Inicia sesión</h1>
-        <button class="btn">
-          <a href="sesion.html">Iniciar como Administrador</a>
-        </button>
-        <button class="btn">
-          <a href="sesion.html">Iniciar como Anfitrión</a>
-        </button>
-        <button class="btn">Acceder como Invitado</button>
-      </div>
+    <!-- Encabezado -->
+    <div id="EncabezadoId"></div>
+    <script src="Scripts_Java/Encabezado.js"></script>
+
+    <!-- Contenido principal -->
+    <main class="main">
+      <!-- Información central -->
+      <section class="info">
+        <h2>Información sobre nuestra empresa</h2>
+        <p>
+          Conoce más sobre los servicios que ofrecemos para hacer de tu evento
+          algo inolvidable. Aquí te mostramos ejemplos de eventos ya realizados
+          y la calidad de nuestro trabajo.
+        </p>
+      </section>
+
+      <!-- Menú flotante lateral -->
+      <aside class="sidebar">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Bodas</a></li>
+          <li><a href="#">Bautizos</a></li>
+          <li><a href="#">XV Años</a></li>
+          <li><a href="#">Otros Eventos</a></li>
+        </ul>
+      </aside>
     </main>
+
+    <!-- Pie de página -->
+    <div id="footer"></div>
+    <script src="Scripts_Java/Pie.js"></script>
   </body>
 </html>
