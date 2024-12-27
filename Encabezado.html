@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title></title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú dinámico</title>
     <link href="Estilos/Encabezado.css" rel="stylesheet" />
+    <link href="Estilos/EncabezadoAdmin.css" rel="stylesheet" />
   </head>
-  <body class="general">
-    <header class="header">
+  <body>
+    <!-- Menú de usuario normal -->
+    <header id="menuUsuario" class="header" style="display: none">
       <div class="contenedor logo-nav-contenedor">
         <label><a href="index.html" class="logo">Logo Empresa</a></label>
         <nav class="navegacion">
@@ -14,10 +17,27 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Catalogo.html">Catálogo</a></li>
             <li><a href="#">Asistencia</a></li>
-            <li><a href="Menu_inicios_Sec.html">Iniciar sesion</a></li>
+            <li><a href="Menu_inicios_Sec.html">Iniciar sesión</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <!-- Menú de administrador -->
+    <header id="menuAdmin" class="header" style="display: none">
+      <div class="contenedor logo-nav-contenedor">
+        <label><a href="AdminInicio.html" class="logo">Logo Empresa</a></label>
+        <nav class="navegacion">
+          <ul>
+            <li><a href="AdminInicio.html">Inicio</a></li>
+            <li><a href="GestionProductos.html">Gestión de productos</a></li>
+            <li><a href="Usuarios.html">Usuarios</a></li>
+            <li><a href="Reportes.html">Reportes</a></li>
+            <li><a href="CerrarSesion.html">Cerrar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script src="Scripts/MenuDinamico.js"></script>
   </body>
 </html>
